@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.warp{
+    width: 960px;
+    margin: 0 auto;
+    font-family:"微軟正黑體";
+}
+
+.header{
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+	background: rgb(241, 241, 241);
+
+}
+.header a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+.fb{
+    padding-right: 10px;
+    color: rgb(18, 27, 146);
+}
+.tw{
+    color: rgb(33, 188, 226);
+    padding-right: 18px;
+}
+.header a:hover{
+    color: rgb(143, 143, 143);
+}
+
+
+.menu{
+    display:flex;
+    justify-content: space-between;
+}
+
+.menu li{
+    margin-top: 20px;
+}
+.menu img{
+    width: 170px;
+    margin-bottom: 17px;
+}
+
+
+.menu a{
+    line-height: 25px;
+}
+.menu ul li a{
+    font-size: 18px;
+    color: rgb(6, 70, 6);
+    text-decoration: none;
+    margin-right: 25px;
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 2px solid transparent; 
+
+}
+.menu ul li a:hover {
+    color: rgb(143, 143, 143);
+    border-bottom:2px solid  rgb(13, 161, 13);
+    background: rgb(230, 255, 223);
+}
+
+.menu>ul>li{
+    float: left;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-open{
+    display: none;
+    position: absolute;
+    background: rgba(227, 255, 236, 0.527);
+    z-index: 11;
+ }
+
+
+
+
+ /*.menu>ul>li:hover ul{
+    margin-top: 0px;
+    display: inline;
+    line-height: 25px;
+ }*/
+.swiper {
+    position: relative;
+    top:-15px;
+    width: 960px; 
+    z-index: 9;
+  }
+
+  .swiper img{
+    width: 960px;
+}
+
+.banner h2{
+    position: absolute;
+    top: 420px;
+    width: 960px;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.336);
+    padding: 10px 0 10px 0 ;
+    z-index: 10;
+}
+
+.main h3{
+text-align: center;
+margin-top: 40px;
+font-size: 40px;
+font-weight: 600;
+color: rgb(12, 63, 19);
+}
+
+.main ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+.main img{
+    width: 100%;
+
+}
+
+.main li{
+    box-shadow: 3px 3px 10px gray;
+    margin:4px;
+}
+
+
+
+ .course h3{
+     margin-top: 50px;
+     margin-bottom: 20px;
+     text-align: center;
+     font-weight: 600;
+     color: rgb(12, 63, 19);
+     font-size: 40px;
+}
+
+.course table{
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 40px;
+    margin-bottom: 40px;
+
+}
+.course th{
+    font-weight: 600;
+    background-color: rgb(231, 231, 231);
+    border-top: 1px solid rgb(168, 168, 168);
+    border-bottom: 1px solid rgb(168, 168, 168);
+    padding-left: 20px;
+    font-size: 18px;
+}
+.course td{
+    padding-left: 20px;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(168, 168, 168);
+
+}
+.heightlight{
+    color: rgb(9, 158, 59);
+}
+.contact{
+    background:linear-gradient(#344b0e ,hsl(91, 52%, 36%));
+    padding-bottom: 40px;
+    padding-left: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.contact h4{
+    font-size: 25px;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    line-height: 35px;
+}
+.contact ul{
+    line-height: 23px;
+    margin-left: 560px;
+    color: white;
+}
+.contact li{
+    margin-bottom: 15px;
+}
+.contact textarea{
+    margin-left: 40px;
+    float: left;
+    width: 360px;
+    height: 230px;
+}
+.footer{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.footer img{
+    width: 150px;
+}
+
+.footer ul{
+    float: right;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 25px;
+    margin-right: 20px;
+    
+}
+.red{
+    text-decoration: none;
+    color: rgb(179, 8, 8);   
+}
+
+.top{
+    width: 100px;
+    position:fixed;
+    right: 20px;
+    bottom: 0;
+}
